@@ -132,7 +132,7 @@ export DASHSCOPE_API_KEY="你的APIKey"
 ### 启动前端
 
 ```bash
-cd industrial-ai-frontend
+cd frontend
 npm install
 npm run dev
 ```
@@ -150,6 +150,13 @@ industrial-ai-platform/
 │   └── entity/              # 4 个 MongoDB 实体
 ├── src/main/resources/
 │   └── application.yml      # 配置文件（API Key 从环境变量读取）
+├── frontend/                # Vue 3 前端
+│   ├── src/
+│   │   ├── App.vue          # 主页面（4 大功能标签页）
+│   │   └── main.js          # 入口 + Element Plus 注册
+│   ├── index.html
+│   ├── vite.config.js
+│   └── package.json
 └── pom.xml
 ```
 
